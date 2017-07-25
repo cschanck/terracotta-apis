@@ -31,7 +31,7 @@ public interface ClientDescriptor {
 
   /**
    * Client source id for this client descriptor.
-   * @return
+   * @return client source id
    */
   ClientSourceId getSourceId();
 }

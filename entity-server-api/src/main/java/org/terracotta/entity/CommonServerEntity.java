@@ -53,7 +53,8 @@ public interface CommonServerEntity<M extends EntityMessage, R extends EntityRes
   }
 
   /**
-   * Notify an entity that a source id is gone.
+   * Notify an entity that a source id is gone. It is possible for a stray message
+   * to be delivered from this client source after the notification.
    * @param sourceId
    */
   void notifyDestroyed(ClientSourceId sourceId);
